@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我爱齐学网-移动开发</title>
+	<meta charset="utf-8">
+	<meta name="description" content="本站致力于促进个人成长,发挥所长,分享自身所学，帮助别人学习的过程,其实也是自己在学习的过程,希望大家一起努力,互相分享交流,技术越来越棒.">
+	<meta name="keywords" content="学习,分享,交流,促进">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="qxw_top">
+		<div class="qxw_top_con">
+			<div class="qxw_top_lt"></div>
+			<div class="qxw_top_rt">
+				<form>
+					<input type="text" name="search" placeholder="请输入搜索内容" class="sear_input">
+					<a href="#">搜索</a>
+					<span class="glyphicon glyphicon-search search_sp"></span>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<div id="qxw_nav">
+		<div class="qxw_nav_con">
+			<ul>
+				<li><a href="/">首页</a></li>
+				<li><a href="/special.html">网页特效</a></li>
+				<li><a href="/htmlCss.html">HTML5+CSS3</a></li>
+				<li><a href="/phpMysq.html">PHP+MYSQL</a></li>
+				<li class="sel"><a href="/mobile.html">移动开发</a></li>
+				<li><a href="/move.html">视频教程</a></li>
+				<li><a href="/template.html">整站模版</a></li>
+				<li><a href="/assistant.html">开发助手</a></li>
+				<li><a href="/contact.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 导航 -->
+
+	<!-- 倒计时 -->
+		<div class="box">正在上线中:<span class="time"></span></div>
+	<!-- 倒计时-->
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var boxDom=document.querySelector('.box');
+			var timeDom=document.querySelector('.time');
+			var tiems="";
+			var currenTamp=new Date().getTime();
+			var day=new Date('2018-08-07 00:00:00');
+			var onlyTam=day.getTime();
+			var currenTime=onlyTam-currenTamp;
+			var days=Math.floor(currenTime/86400000);
+			tiems=days+"天";
+			timeDom.innerHTML=tiems;
+		}
+	</script>
+</body>
+</html>

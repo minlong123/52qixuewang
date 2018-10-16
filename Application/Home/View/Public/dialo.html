@@ -1,0 +1,72 @@
+<!-- 登录注册弹出面板 -->
+	<div class="dialog">
+		<div class="dialog_modal"></div><!--  模态 -->
+		<span class="dialog_close glyphicon glyphicon-remove"></span>
+		<div class="dialog_panel">
+			<div class="dialog_panel_c">
+				<span class="dialog_login">用户登录</span>
+				<span class="dialog_register">注册新用户</span>
+			</div>
+
+			<!-- 切换的登录组件 -->
+			<div class="dialog_modal_login">
+				<form>
+					<div class="dialog_login_user">
+						<span class="glyphicon glyphicon-user"></span>
+						<input type="text" name="username" placeholder="输入用户名"/>
+					</div>
+
+					<div class="dialog_login_user">
+						<span class="glyphicon glyphicon-tag"></span>
+						<input type="password" name="password" placeholder="输入密码"/>
+					</div>
+
+					<div class="dialog_login_ver">
+						<strong>验证码</strong>
+						<input type="text" name="verCode"/>
+						<span class="dia_verification"></span>
+					</div>
+
+					<div class="dialog_login_state"><input type="checkbox" name="state"/>记住登录状态</div>
+
+					<button class="dialog_login_sub">登录</button>
+				</form>
+
+			</div>
+			<!-- 切换的注册组件 -->
+			<div class="dialog_modal_register">
+				<form>
+					<div class="dialog_register_user">
+						<span class="glyphicon glyphicon-user"></span>
+						<input type="text" name="username" placeholder="输入用户名"/>
+					</div>
+
+					<div class="dialog_register_user">
+						<span class="glyphicon glyphicon-tag"></span>
+						<input type="password" name="password" placeholder="输入密码"/>
+					</div>
+
+					<div class="dialog_register_user">
+						<span class="glyphicon glyphicon-tag"></span>
+						<input type="password" name="password" placeholder="确认密码"/>
+					</div>
+
+					<div class="dialog_register_user">
+						<span class="glyphicon glyphicon-envelope"></span>
+						<input type="password" name="password" placeholder="输入邮箱"/>
+					</div>
+
+					<div class="dialog_register_ver">
+						<strong>验证码</strong>
+						<input type="text" name="verCode"/>
+						<span class="dia_verification1"></span>
+					</div>
+
+					<div class="dialog_register_state"><input type="checkbox" name="state"/>我已阅读并同意<a href="__MODULE__/Index/copyRight" target="_blank" class="dialog_register_agreement">用户协议</a></div>
+
+					<button class="dialog_register_sub">注册</button>
+				</form>
+			</div>
+		</div>
+	</div>
+<!-- 登录注册弹出面板 -->
